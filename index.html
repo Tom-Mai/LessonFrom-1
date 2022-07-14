@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>JS</title>
+  </head>
+
+  <body>
+    <div
+      class="container d-flex flex-collumn min-vh-100 justify-content-center align-items-center"
+    >
+      <form class="row g-3 needs-validation" id="lessonForm" novalidate>
+        <div class="col-md-6">
+          <label for="firstname" class="form-label">Prenom</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            class="form-control"
+          />
+          <div class="invalid-feedback">Please choose a username.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="lastname" class="form-label">Nom</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            class="form-control"
+          />
+          <div class="invalid-feedback">Please choose a name.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-control" />
+          <div class="invalid-feedback">Please choose a Email.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="" class="form-label">Telephone</label>
+          <input
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            class="form-control"
+          />
+          <div class="invalid-feedback">Please choose a phoneNumber.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="adresse" class="form-label">Adresse</label>
+          <input type="text" id="adresse" name="adresse" class="form-control" />
+          <div class="invalid-feedback">Please choose a address.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="city" class="form-label">Ville</label>
+          <select class="form-select" name="city" id="city">
+            <option selected disabled value="">Choose a city...</option>
+            <option value="">Paris</option>
+            <option value="">Lyon</option>
+            <option value="">Marseille</option>
+            <option value="">Lille</option>
+          </select>
+          <div class="invalid-feedback">Please choose a city.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="postcode" class="form-label">Code postal</label>
+          <input
+            type="text"
+            id="postcode"
+            name="postcode"
+            class="form-control"
+          />
+          <div class="invalid-feedback">Please choose a postcode.</div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3 form-check">
+            <label class="form-check-label" for="exampleCheck1"
+              >J'accepete les conditions</label
+            >
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="conditions"
+              name="conditions"
+            />
+            <div class="invalid-feedback">
+              Please read conditions before submit.
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-25 shadow-md">Valider</button>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
